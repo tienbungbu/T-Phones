@@ -1,0 +1,46 @@
+ <header id="fixNav" th:fragment = "headerCustomer" class="container-fluid" style="background-color: #FFC312;">
+            <nav  class="container navbar navbar-expand-lg navbar-light" style="background-color: #FFC312;" >
+                <div class="row">
+                <h1><a class="col-1 navbar-brand" th:href="@{/home}"> <i class="fab fa-tumblr-square fa-2x"></i> PHONES </a></h1>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="col-3 nav-item dropdown">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="background-color: #494641;">
+                                    Xem giá, tồn kho tại:                          
+                                </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="#">Hà Nội</a>
+                            <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                            <a class="dropdown-item " href="#">Đà Nẵng</a>
+                            <a class="dropdown-item">Hải Phòng</a>
+                            <a class="dropdown-item" href="#">Phú Quốc</a>
+                        </div>
+                    </div>
+                    </li>
+                    <form class="col-6 d-flex ml-1" style="">
+                        <input style="width: 600%;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="form-control btn btn-outline-dark" type="submit" style="background-color: whitesmoke;">
+                            <i class="fas fa-search "></i></button>
+                    </form>
+                    <li class="col-3 nav-item" >
+                        <a style="color:#494641" aria-current="page" href="#">   
+                            <i class="fas fa-phone-square fa-2x"></i>
+                            
+                            <span style="font-size: 15px; font-family: verdana;">Call:1900.1997  </span>
+                        </a>
+                    </li>
+                    <li class="col-3 nav-item" >
+                        <a style="color:#494641" aria-current="page" href="#">   
+                            <i class="fas fa-cart-arrow-down fa-2x "></i>
+                            <span style="font-size: 15px; font-family: verdana;">Giỏ Hàng  </span> <br>
+                        </a>
+                    </li>
+                    </div>
+                </div>
+                </div>
+            </nav>
+     </header>

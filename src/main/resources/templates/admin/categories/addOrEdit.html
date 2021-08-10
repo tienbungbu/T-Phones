@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Title</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--Bootsrap 4 CDN-->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+
+<!--Fontawesome CDN-->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+	integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	crossorigin="anonymous">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="">
+</head>
+
+<body>
+	<div th:insert="common/headerAdmin :: headerAdmin"></div>
+
+	<main class="container">
+
+		<form  th:action="@{/admin/categories/saveOrUpdate}" method="post" th:object="${categoryDTO}" >
+			<div class="card">
+				<div class="card-header">
+					<h2>Add New Category</h2>
+				</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label for="categoryId">Category ID:</label> 
+						
+						<input type="text" th:field="*{categoryId}" placeholder="ID" readonly 
+						class="form-control" aria-describedby="helpId">
+					</div>
+					<div class="form-group">
+						<label for="name">Name Category :</label> 
+						<input type="text" th:field="*{name}"
+							 class="form-control" aria-describedby="helpId">
+					</div>
+				</div>
+				<div class="card-footer text-muted">
+					<a class="btn btn-success" th:href="@{/admin/categories}">List Categories</a>
+					<button class="btn btn-primary"> <i class="fas fa-save"></i> 
+						<span th:if="${categoryDTO.isEdit}">Update</span>
+						<span th:unless="${categoryDTO.isEdit}">Save</span>
+					</button>
+				</div>
+			</div>
+		</form>
+	</main>
+	<div th:insert="common/footer :: footer"></div>
+</body>
+</html>

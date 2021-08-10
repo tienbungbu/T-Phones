@@ -1,0 +1,42 @@
+<header th:fragment = "headerAdmin" class="container-fluid" style="background-color: #FFC312;">
+	<div class="container">
+    <div class="col">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFC312;">
+        <div class="container-fluid">
+          <h1><a class="navbar-brand" th:href="@{/home}"> <i class="fab fa-tumblr-square fa-2x"></i> PHONES </a></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ml-4" >
+                <a class="nav-link active" aria-current="page" th:href="@{/admin/categories/}">Home</a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="#">Manage Customer</a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="#">Manage Category</a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="#">Manage Product</a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="#">Manage Order</a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="#">Manage Profile</a>
+              </li>
+            </ul>
+            
+            <form class="d-flex ml-12">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" style="background-color: darkslateblue;">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    </div>
+  </header>
