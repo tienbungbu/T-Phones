@@ -10,16 +10,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item ml-4" >
-                <a class="nav-link active" aria-current="page" th:href="@{/admin/categories/}">Home</a>
+                <a class="nav-link active" aria-current="page" th:href="@{/home}">Home</a>
               </li>
               <li class="nav-item ml-4">
                 <a class="nav-link" href="#">Manage Customer</a>
               </li>
               <li class="nav-item ml-4">
-                <a class="nav-link" href="#">Manage Category</a>
+                <a class="nav-link" th:href="@{/admin/categories/searchPage}" >Manage Category</a>
               </li>
               <li class="nav-item ml-4">
-                <a class="nav-link" href="#">Manage Product</a>
+                <a class="nav-link" th:href="@{/admin/products/}">Manage Product</a>
               </li>
               <li class="nav-item ml-4">
                 <a class="nav-link" href="#">Manage Order</a>

@@ -18,7 +18,7 @@
     <body>
      <div th:insert="common/headerCustomer :: headerCustomer">
         <header id="fixNav" th:fragment = "headerCustomer" class="container-fluid" style="background-color: #FFC312;">
-            <nav  class="container navbar navbar-expand-lg navbar-light" style="background-color: #FFC312;" >
+            <nav  class="container-fluid navbar navbar-expand-lg navbar-light" style="background-color: #FFC312;" >
                 <div class="row">
                 <h1><a class="col-1 navbar-brand" th:href="@{/home}"> <i class="fab fa-tumblr-square fa-2x"></i> PHONES </a></h1>
                 
@@ -52,10 +52,16 @@
                             <span style="font-size: 15px; font-family: verdana;">Call:1900.1997  </span>
                         </a>
                     </li>
-                    <li class="col-3 nav-item" >
+                    <li class="col-2 nav-item" >
                         <a style="color:#494641" aria-current="page" href="#">   
                             <i class="fas fa-cart-arrow-down fa-2x "></i>
                             <span style="font-size: 15px; font-family: verdana;">Giỏ Hàng  </span> <br>
+                        </a>
+                    </li>
+                    <li class="col-2 nav-item" >
+                        <a style="color:#494641" aria-current="page" href="#">   
+                            <i class="fas fa-sign-in-alt fa-2x"></i>
+                            <span style="font-size: 15px; font-family: verdana;">Đăng Nhập  </span> <br>
                         </a>
                     </li>
                     </div>
