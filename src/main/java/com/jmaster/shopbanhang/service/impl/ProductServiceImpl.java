@@ -3,6 +3,8 @@ package com.jmaster.shopbanhang.service.impl;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
@@ -15,6 +17,7 @@ import com.jmaster.shopbanhang.entity.ProductEntity;
 import com.jmaster.shopbanhang.service.ProductService;
 
 @Service
+@Transactional
 public class ProductServiceImpl implements ProductService {
 	
 	@Autowired

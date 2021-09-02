@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <form action="" method="">
+                            <form th:action="@{/login}" method="post">
                                 <div class="input-group form-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -97,39 +97,46 @@ $('#exampleModal').on('show.bs.modal', function (event) {
           </button>
         </div>
         <div class="modal-body">
-        <form action="">
+        
+        
+        
+        
+    
+        <form action="" method="post"  >
           <div class="form-group">
             <input type="text"
-              class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="họ và tên">
+              class="form-control" name="name" id="name"  required="required"
+              aria-describedby="helpId" placeholder="họ và tên">
           </div>
            <div class="form-group">
             <input type="number"
-              class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="tuổi">
+              class="form-control" name="age" id="age"  required="required"
+              aria-describedby="helpId" placeholder="tuổi">
           </div>
            <div class="form-group">
             <input type="text"
-              class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="địa chỉ">
-          </div>
-           <div class="form-group">
-            <input type="email"
-              class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Email">
-          </div>
-           <div class="form-group">
-            <input type="text"
-              class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="usename">
+              class="form-control" name="usename" id="usename"  required="required"
+              aria-describedby="helpId" placeholder="usename">
           </div>
            <div class="form-group">
             <input type="password"
-              class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="password">
+              class="form-control" name="password" id="password" required="required"
+              aria-describedby="helpId" placeholder="password">
           </div>
+          
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Đăng ký</button>
+        </div>
           
           </form>
           
+          
+          
+          
+          
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Đăng ký</button>
-        </div>
+        
       </div>
     </div>
   </div>

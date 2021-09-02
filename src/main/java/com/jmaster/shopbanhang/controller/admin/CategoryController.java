@@ -123,7 +123,6 @@ public class CategoryController {
 		
 		Page<CategoryEntity> resultPage = null;
 		
-		List<CategoryEntity> list = null;
 		
 		if(StringUtils.hasText(name)) { // hastext : kiem tra xem co noi dung hay khong
 			resultPage = categoryService.findByName(name,pageable);
